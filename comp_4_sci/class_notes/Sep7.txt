@@ -1,0 +1,31 @@
+Class Notes 9/7/16
+
+make file: touvh
+edit file: vi 
+save and exit: : adn then wq
+cp: copy (using combo of .. and .)
+ls -a: ?
+ls -lFa > 
+cat: concatanate: connect one thing to another (view files)
+man: manual
+cat > file : show file
+cat < file : make file 
+cat file : print file
+to stop cat : Cntrl D
+rm: remove file
+rm -r <directory>   : remove entire directory, all sub-directories, and all files, wether they are empty or not
+which <command>   :absolute path name of a command
+
+cat bw*  : cat any file that begins with bw 
+* wild card
+| ( pipe) : links commans  
+cat bw* | more : takes the content of standard input and connects it with standard output of another command and shows infor one page at a time?? idk 
+ 
+more : displays one page of information with prompt to enter characters to move to next page 
+	space : next page
+	q : quit
+	search for characters
+
+printenv : pring enviroment 
+
+

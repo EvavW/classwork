@@ -1,0 +1,42 @@
+best fit algorithm:
+
+distnace between line of best fit and each data point
+to actually calculate: n sum i=1 (yi - (axi + b))^2 where yi is the point on the best fit  line where the vertical hits
+to minimize the function: take the derivitae in resoect to a and to be and set each to zero
+d/da(function)=0
+d/db(function)=0
+derivative = n sum i=1 (-2xi(yi-axi-b)=0
+n sum i=1 (-2()=0
+
+on the computer: use matricies
+
+from above equations:
+sum xi (a*xi + b ) = sum (xi*yi)
+sum(axi + b) = sum (yi)
+
+variables fo matrix form: a and b:
+[a]*[sum xi^2, sum xi, ] = [sum xiyi]
+b	sum xi , n 		sum yi
+
+how to get the inverse of a two by two matrix: 1/matrix * switch top left and bottom right, make top right and bottom left negative
+
+a	1/                n -sumxi         
+b = 	sumxi^2 sumxi *   -sumxi sumxi2  * sumxiyi  = a mess that a computer will do for you
+	sumxi 	n			   sumyi 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

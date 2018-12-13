@@ -1,0 +1,44 @@
+Class notes Sep 12
+
+redirection
+> redirect standard out
+< redirect standard in 
+| pipe
+
+printenv: print enviroment
+
+compile a c program:
+cc
+
+echo: can return any enviroment variable 
+	ex: echo $? : displays return value for last run program
+file ending in .c
+	preprocessor directories
+	functions
+		statements
+			simple statements ending in ;
+			compound statements grouped between {}
+all .c files must have a main
+pattern for functions:
+
+return- type
+name()
+{
+lines that comprise the function
+}
+
+simple statements can contain
+	identifies
+	constants
+	operators
+	function invocations
+ex: printf("Hello World!\n");
+	printf: function invocation (invoking printf)
+		printf is a library function (pre-compilesd)
+	argument: character string constant:" Hello World!\\n"
+ex: return 0;
+	operator: return
+		if return resides in main the program terminates at that position
+		if return resides in the body of the function it will return its content to the shell 
+	string constant: 0
+	

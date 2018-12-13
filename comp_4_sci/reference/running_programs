@@ -1,0 +1,12 @@
+
+To run a C program file:
+
+example: hello.c
+
+To compile:
+
+cc hello.c -o hello
+
+To execute:
+
+./hello

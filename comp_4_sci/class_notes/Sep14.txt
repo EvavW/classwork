@@ -1,0 +1,42 @@
+Class Notes Sep 14
+
+Notes on .c files
+
+fundamental types 
+
+type	 keyword     example of constant   format specificies
+integer int        123 -137               %d
+float  float        1.23 2.7e-8            %f
+double  double    1.23 - 2.7e-8		%le
+character char   'x'				%c
+character string   "this is a string"		%c
+
+%
+& look for the address of the operator, use for user input 
+% replace operator value within program
+
+***** see prog1 and prog2 in class_notes for more notes and simple examples foe .c files
+
+arithmatic hierarchy
+
+- make something negative
+* multipy
+/ divide
++ add
+- subtract
+
+
+when two INTS  are divided the decimal remainder is truncated, not rounded. 
+ex: 5/2 =/ 2.5 =/ 3
+	==2
+
+
+
+
+
+
+
+
+
+
+ 

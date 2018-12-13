@@ -1,0 +1,55 @@
+Class notes september 19th
+
+conditional branching 
+
+Boolean expression {TRUE910 or FALSE(0)
+	== equality
+	!= not equal
+	> greater than
+	< lesser than '
+	>= greater or equal
+	<= less or equl 
+		&& and
+		|| or
+		! 
+if (Boolean)__________; if true execute this 
+______; if not true execute this
+		
+
+
+if (Boolean) {
+	_____;
+	_____;      execute if true
+{
+else {
+	____;       execute if not true 
+}
+
+
+if (Boolean) {
+ 	_____;      execute if true
+{
+else if (Boolean)  { execute if true
+	_____;
+ {
+else {    execute if false
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

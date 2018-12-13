@@ -1,0 +1,110 @@
+/* programming assignement 1
+using a mathematic function
+ 
+The Trapezoidal Rule:
+
+to calculate the integral from a to b : width of a trapezoid * average of the two sides 
+	do this for each traezoid using a for loop
+	claculate area for each trapezoid
+	accumulate results
+		no need for an array, just a for loop
+	to make more efficent :  loop over all discrezation point: accumulate f(x(i)) all interior points have weight 2 and exerterior points have weight 1: will require an if loop to discriminate
+
+Program Requirements:
+	test function on something where we know the exact result: 1+x^2+x^3  exact result is: 19/12 = 1.5833....
+run program for more and more trapezoids and value should come coser to absolute value
+
+if bis large we could be presented with a probelm because the trrapezoidal rule will become inaccurate if one trapezoid spans many humps on the sin function, it will be inaccurate
+
+have the program compute the number of trapezoids that will be the most accurate: how many oscillarions per unit x : b = 0-10 than we need a number of trapezoids that will fit under a certain number of wiggles 
+
+how to do this: calculates effective wavelength in x: say wavelength is equl to lambda: than we want n = 1/10lambda
+
+clalc effecive wavelength from frquency whic h is proportional to x 
+
+use can f for a,b,and n 
+the integrand should be relegrated to a function 
+use a double valued cunction 
+
+trapezoid rule:I =  sum(deltaA) from i =0 to i=n-2 where deltaAi = 1/s(f(xi)+f(xi+1))deltax
+	can also be written as I = deltax/2[f(x0)+2f(x1)+......2f(xi)+.....2f(xn-2)+f(xn-1)]
+
+we want to integrate the functions f(x) = cos(x^2) 
+	positionally dependent waveleght : wavelenthg gets shorter and shorter as x gets bigger 
+	f(x) = cos(x^2) = 
+	x = 2pi/lambda(x)
+
+lamda(b) = 2pi/b = effective wavelength near b 
+deltax = lamba(b)/100
+b-a/n-1 = lamba(b)/100 = 2pi/100 (n-1 is the total number of trapeoids)
+n = 100b/2pi(b-a)+1  equation to figure out how many trapezoids we shoudld use (number of disrezation points to achieve accuracy) 
+	must be rounded to an integer 
+	deltax = b-a/nr-1 (nr means n rounded) *******program must re-calculate deltax based on the rounded value of n 
+		only need user input for b and a not n 
+
+Fist Order:
+dx/dt = lim deltat to 0( x(t+deltat)-x(t))/delta t
+
+(x(t + deltat)-x(t))/deltat =ish F[x,t]
+
+x(t+deltat) =ish x(t) + deltat * F[x,t]
+
+Known as the Euler Method. == approximating the slope from a known point and extrapolating forward 
+
+Initial Value Problem:
+dx/dt = F[x,t]
+x(t=0)=x0
+
+-----
+
+F = Ma
+F = Mdv/dt
+F = M(d^2x)/(dt^2)
+
+conservative force :  work done on using force to get to one point to another is independednt of the path that was taken to get there
+
+say M=1
+rewrite:
+dv/dt = F
+dx/dt = v
+-----
+v(t=0)=v0
+x(t=0)x0
+------ 
+Euler's equations:
+vi+1 = vi + deltat F[xi,vi,t]
+xi+1 = xi + deltat vi
+Euler-Cromers Method: uses derivitaeve info obained at the end of one equation to improve calculation of next equation:
+vi+1 = vi + deltat F[xi, vi, t]
+xi+1 = xi + deltat vi+1
+Midpoint Methods
+vi+1 = vi + deltat F[vi,xi,ti]
+xi+1 = xi + deltat/s(vi+vi+1)
+Solution
+t    v    x
+0    v0   x0
+-    -    -
+-    -    -
+-    -    -
+deltat(N-1) - - 
+ ***look up first order vs second order equations 
+
+Malthusian Growth:
+dN/dt = rN
+intdN/N = intrdt
+
+lmN = rt+c
+N(t) = e^rt+c = e^c*e^rt
+N(t=0) = e^c = N0
+
+----------
+N(t) = N0e^rt
+----------
+
+dN/dr = rN
+(N(t+deltat)-N(t))deltat = rN
+
+-------
+N(t+deltat) = N(t) + deltatrn 
+______ 
+

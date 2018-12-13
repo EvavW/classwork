@@ -1,0 +1,7 @@
+Sep27 notes
+
+when compliling a progrma that uses library functions you must compile using this statement (i.ie prog.c)
+
+	cc prog.c =0 prog -lm
+
+

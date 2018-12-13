@@ -1,0 +1,30 @@
+notes of boundary values
+
+no lab: just lecture
+
+Physics overview:
+	Kinematics a
+	Dynamics F
+	Field Equation V
+a= F/M links kinematics and dynamics
+F = alphaV
+
+source equations
+charge distrobution
+mass distrobution
+
+how do we get the potentials from the sources?
+
+d^2V/dx^2 = p(x) : Poisson Equation
+
+VV(Xl = Vl , V(Xr) = Vr : boundary values
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,56 @@
+lab 3 
+least squares
+
+method minimize Chi-Squared
+
+minimuze the sum of the squares of the deviations between the data point and the straight line
+Chi Squares= sum of the square for each of the deviations 
+	first square all of the deviations and them sum them all
+		deivations are weightedby Sigmai which corresponds to the size of each data point
+		in ours we will have al data subject ot he same error 
+
+so how do we solve the minimization?
+
+take the dereivative of chi Squares in respect to a1 and a2 and set each equal to zero
+
+results that (see program sheet)
+
+
+how are we going to store the data?
+
+singma = 1/2?
+
+best possible storage mechanism: load all of the data into three arrays
+	array review:
+		double x[100], y[100], sig[100];
+		int n, i; 
+		double *sums* sx,sy,sxx,sxy,s
+how to count data items as they are read in?
+
+#include <stdio.h>
+#include <math.h>
+
+int 
+main()
+{
+	*/data/* 
+	double x[100], y[100], sig[100]; 
+	*/ accumulators for the running sums*/
+	double s, sx, sxx, sy, sxy;
+	doulbe a1, a2, sa1, sa2;
+	*/ file pointer*/
+	FILE *fp;
+	*/ i dont even know. i never know*/
+	int n, i;
+
+
+	fp = fopen("data.txt", "r");
+
+	n = 0;
+
+	while(fscan(fp, "%le %le %le", &x[n], &y[n], &sig[n]) != EOF) n++;
+
+	printf("%d data points read from data.txt\n", n);
+
+	return 0;
+}	
